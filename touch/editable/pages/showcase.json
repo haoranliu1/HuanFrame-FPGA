@@ -1,0 +1,215 @@
+{
+  "header": {
+    "lock": "0000000000552100",
+    "writer": "01440102000000000000000000000000"
+  },
+  "root": {
+    "attributes": {
+      "x": 0,
+      "y": 0,
+      "w": 480,
+      "h": 272,
+      "sta": 1,
+      "bco": 2211,
+      "left": 255,
+      "right": 255
+    },
+    "events": {
+      "codesload": [],
+      "codesloadend": [],
+      "codesdown": [],
+      "codesup": [],
+      "codesunload": []
+    }
+  },
+  "name": "showcase",
+  "objects": [
+    {
+      "key": "tTitle",
+      "type": "text",
+      "attributes": {
+        "objname": "tTitle",
+        "vscope": 0,
+        "x": 12,
+        "y": 4,
+        "w": 456,
+        "h": 30,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "FPGA 实时展示 ",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "bCompare",
+      "type": "button",
+      "attributes": {
+        "objname": "bCompare",
+        "x": 16,
+        "y": 48,
+        "w": 448,
+        "h": 48,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "原图 / 处理分屏 ",
+        "txt_maxl": 23
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "page ${page:compare}"
+        ]
+      }
+    },
+    {
+      "key": "bEffect",
+      "type": "button",
+      "attributes": {
+        "objname": "bEffect",
+        "x": 16,
+        "y": 106,
+        "w": 448,
+        "h": 48,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "图片转场 · 八种效果 ",
+        "txt_maxl": 30
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "page ${page:effect}"
+        ]
+      }
+    },
+    {
+      "key": "bStage",
+      "type": "button",
+      "attributes": {
+        "objname": "bStage",
+        "x": 16,
+        "y": 164,
+        "w": 448,
+        "h": 48,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "频谱舞台 · 三种样式 ",
+        "txt_maxl": 30
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "page ${page:stage}"
+        ]
+      }
+    },
+    {
+      "key": "bBack",
+      "type": "button",
+      "attributes": {
+        "objname": "bBack",
+        "x": 16,
+        "y": 228,
+        "w": 216,
+        "h": 36,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "图像参数 ",
+        "txt_maxl": 14
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "page ${page:param}"
+        ]
+      }
+    },
+    {
+      "key": "bVideo",
+      "type": "button",
+      "attributes": {
+        "objname": "bVideo",
+        "x": 248,
+        "y": 228,
+        "w": 216,
+        "h": 36,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "视频控制 ",
+        "txt_maxl": 14
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "page ${page:video}"
+        ]
+      }
+    }
+  ]
+}

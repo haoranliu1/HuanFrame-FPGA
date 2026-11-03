@@ -1,0 +1,5 @@
+Pillow>=10
+fonttools>=4
+
+# Tkinter is included in a normal Windows Python install.
+# FFmpeg/FFprobe, Anlogic TD and the HMI vendor editor are external tools.

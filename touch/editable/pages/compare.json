@@ -1,0 +1,672 @@
+{
+  "header": {
+    "lock": "0000000000552100",
+    "writer": "01440102000000000000000000000000"
+  },
+  "root": {
+    "attributes": {
+      "x": 0,
+      "y": 0,
+      "w": 480,
+      "h": 272,
+      "sta": 1,
+      "bco": 2211,
+      "left": 255,
+      "right": 255
+    },
+    "events": {
+      "codesload": [
+        "hPos.val=nPos.val",
+        "hBright.val=param.nB.val",
+        "hContrast.val=param.nC.val",
+        "printh 55 01 16",
+        "prints nOn.val,1",
+        "printh FF FF FF",
+        "printh 55 01 17",
+        "prints nPos.val,1",
+        "printh FF FF FF",
+        "if(nOn.val==1)",
+        "{",
+        "tState.txt=bOn.txt",
+        "}else",
+        "{",
+        "tState.txt=bOff.txt",
+        "}",
+        "nPixel.val=nPos.val*4",
+        "covx nPixel.val,tPos.txt,0,0",
+        "tPos.txt=tPos.txt+\" px\"",
+        "ref tState",
+        "ref tPos"
+      ],
+      "codesloadend": [],
+      "codesdown": [],
+      "codesup": [],
+      "codesunload": []
+    }
+  },
+  "name": "compare",
+  "objects": [
+    {
+      "key": "tTitle",
+      "type": "text",
+      "attributes": {
+        "objname": "tTitle",
+        "vscope": 0,
+        "x": 12,
+        "y": 4,
+        "w": 456,
+        "h": 30,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "左侧原图  |  右侧实时处理 ",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "nOn",
+      "type": "variable",
+      "attributes": {
+        "objname": "nOn",
+        "vscope": 1,
+        "val": 0,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "nPos",
+      "type": "variable",
+      "attributes": {
+        "objname": "nPos",
+        "vscope": 1,
+        "val": 80,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "nPixel",
+      "type": "variable",
+      "attributes": {
+        "objname": "nPixel",
+        "vscope": 1,
+        "val": 320,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "tState",
+      "type": "text",
+      "attributes": {
+        "objname": "tState",
+        "vscope": 0,
+        "x": 16,
+        "y": 38,
+        "w": 216,
+        "h": 24,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 2211,
+        "pco": 9522,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "全屏处理 ",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tPos",
+      "type": "text",
+      "attributes": {
+        "objname": "tPos",
+        "vscope": 0,
+        "x": 248,
+        "y": 38,
+        "w": 216,
+        "h": 24,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 2211,
+        "pco": 9522,
+        "xcen": 2,
+        "ycen": 1,
+        "txt": "320 px",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "bOn",
+      "type": "button",
+      "attributes": {
+        "objname": "bOn",
+        "x": 16,
+        "y": 66,
+        "w": 140,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "开启分屏 ",
+        "txt_maxl": 14
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "nOn.val=1",
+          "printh 55 01 16",
+          "prints nOn.val,1",
+          "printh FF FF FF",
+          "printh 55 01 17",
+          "prints nPos.val,1",
+          "printh FF FF FF",
+          "if(nOn.val==1)",
+          "{",
+          "tState.txt=bOn.txt",
+          "}else",
+          "{",
+          "tState.txt=bOff.txt",
+          "}",
+          "nPixel.val=nPos.val*4",
+          "covx nPixel.val,tPos.txt,0,0",
+          "tPos.txt=tPos.txt+\" px\"",
+          "ref tState",
+          "ref tPos"
+        ]
+      }
+    },
+    {
+      "key": "bOff",
+      "type": "button",
+      "attributes": {
+        "objname": "bOff",
+        "x": 170,
+        "y": 66,
+        "w": 140,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "关闭分屏 ",
+        "txt_maxl": 14
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "nOn.val=0",
+          "printh 55 01 16",
+          "prints nOn.val,1",
+          "printh FF FF FF",
+          "printh 55 01 17",
+          "prints nPos.val,1",
+          "printh FF FF FF",
+          "if(nOn.val==1)",
+          "{",
+          "tState.txt=bOn.txt",
+          "}else",
+          "{",
+          "tState.txt=bOff.txt",
+          "}",
+          "nPixel.val=nPos.val*4",
+          "covx nPixel.val,tPos.txt,0,0",
+          "tPos.txt=tPos.txt+\" px\"",
+          "ref tState",
+          "ref tPos"
+        ]
+      }
+    },
+    {
+      "key": "bCenter",
+      "type": "button",
+      "attributes": {
+        "objname": "bCenter",
+        "x": 324,
+        "y": 66,
+        "w": 140,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "分界居中 ",
+        "txt_maxl": 14
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "nPos.val=80",
+          "hPos.val=80",
+          "printh 55 01 16",
+          "prints nOn.val,1",
+          "printh FF FF FF",
+          "printh 55 01 17",
+          "prints nPos.val,1",
+          "printh FF FF FF",
+          "if(nOn.val==1)",
+          "{",
+          "tState.txt=bOn.txt",
+          "}else",
+          "{",
+          "tState.txt=bOff.txt",
+          "}",
+          "nPixel.val=nPos.val*4",
+          "covx nPixel.val,tPos.txt,0,0",
+          "tPos.txt=tPos.txt+\" px\"",
+          "ref tState",
+          "ref tPos"
+        ]
+      }
+    },
+    {
+      "key": "tSplit",
+      "type": "text",
+      "attributes": {
+        "objname": "tSplit",
+        "vscope": 0,
+        "x": 16,
+        "y": 104,
+        "w": 100,
+        "h": 24,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "分界位置 ",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tBright",
+      "type": "text",
+      "attributes": {
+        "objname": "tBright",
+        "vscope": 0,
+        "x": 16,
+        "y": 146,
+        "w": 100,
+        "h": 24,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "亮度 ",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tContrast",
+      "type": "text",
+      "attributes": {
+        "objname": "tContrast",
+        "vscope": 0,
+        "x": 16,
+        "y": 188,
+        "w": 100,
+        "h": 24,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "对比度 ",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "bRestore",
+      "type": "button",
+      "attributes": {
+        "objname": "bRestore",
+        "x": 16,
+        "y": 232,
+        "w": 216,
+        "h": 32,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "恢复中性处理 ",
+        "txt_maxl": 20
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "param.nB.val=50",
+          "param.nC.val=50",
+          "hBright.val=50",
+          "hContrast.val=50",
+          "printh 55 01 10 32 FF FF FF",
+          "printh 55 01 11 32 FF FF FF"
+        ]
+      }
+    },
+    {
+      "key": "bBack",
+      "type": "button",
+      "attributes": {
+        "objname": "bBack",
+        "x": 248,
+        "y": 232,
+        "w": 216,
+        "h": 32,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "返回 ",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "page ${page:showcase}"
+        ]
+      }
+    },
+    {
+      "key": "hPos",
+      "type": "slider",
+      "attributes": {
+        "objname": "hPos",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 128,
+        "y": 108,
+        "w": 336,
+        "h": 26,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "mode": 0,
+        "sta": 1,
+        "psta": 0,
+        "wid": 0,
+        "hig": 0,
+        "dis": 100,
+        "pic": 65535,
+        "picc": 65535,
+        "bco": 55036,
+        "pic1": 65535,
+        "picc1": 65535,
+        "bco1": 58562,
+        "pic2": 65535,
+        "pco": 58562,
+        "val": 80,
+        "maxval": 160,
+        "minval": 0,
+        "ch": 24,
+        "endx": 463,
+        "endy": 133
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "nPos.val=hPos.val",
+          "printh 55 01 16",
+          "prints nOn.val,1",
+          "printh FF FF FF",
+          "printh 55 01 17",
+          "prints nPos.val,1",
+          "printh FF FF FF",
+          "if(nOn.val==1)",
+          "{",
+          "tState.txt=bOn.txt",
+          "}else",
+          "{",
+          "tState.txt=bOff.txt",
+          "}",
+          "nPixel.val=nPos.val*4",
+          "covx nPixel.val,tPos.txt,0,0",
+          "tPos.txt=tPos.txt+\" px\"",
+          "ref tState",
+          "ref tPos"
+        ],
+        "codesslide": [
+          "nPos.val=hPos.val",
+          "printh 55 01 16",
+          "prints nOn.val,1",
+          "printh FF FF FF",
+          "printh 55 01 17",
+          "prints nPos.val,1",
+          "printh FF FF FF",
+          "if(nOn.val==1)",
+          "{",
+          "tState.txt=bOn.txt",
+          "}else",
+          "{",
+          "tState.txt=bOff.txt",
+          "}",
+          "nPixel.val=nPos.val*4",
+          "covx nPixel.val,tPos.txt,0,0",
+          "tPos.txt=tPos.txt+\" px\"",
+          "ref tState",
+          "ref tPos"
+        ]
+      }
+    },
+    {
+      "key": "hBright",
+      "type": "slider",
+      "attributes": {
+        "objname": "hBright",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 128,
+        "y": 150,
+        "w": 336,
+        "h": 26,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "mode": 0,
+        "sta": 1,
+        "psta": 0,
+        "wid": 0,
+        "hig": 0,
+        "dis": 100,
+        "pic": 65535,
+        "picc": 65535,
+        "bco": 55036,
+        "pic1": 65535,
+        "picc1": 65535,
+        "bco1": 58562,
+        "pic2": 65535,
+        "pco": 58562,
+        "val": 50,
+        "maxval": 100,
+        "minval": 0,
+        "ch": 24,
+        "endx": 463,
+        "endy": 175
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "param.nB.val=hBright.val",
+          "printh 55 01 10",
+          "prints hBright.val,1",
+          "printh FF FF FF"
+        ],
+        "codesslide": [
+          "param.nB.val=hBright.val",
+          "printh 55 01 10",
+          "prints hBright.val,1",
+          "printh FF FF FF"
+        ]
+      }
+    },
+    {
+      "key": "hContrast",
+      "type": "slider",
+      "attributes": {
+        "objname": "hContrast",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 128,
+        "y": 192,
+        "w": 336,
+        "h": 26,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "mode": 0,
+        "sta": 1,
+        "psta": 0,
+        "wid": 0,
+        "hig": 0,
+        "dis": 100,
+        "pic": 65535,
+        "picc": 65535,
+        "bco": 55036,
+        "pic1": 65535,
+        "picc1": 65535,
+        "bco1": 58562,
+        "pic2": 65535,
+        "pco": 58562,
+        "val": 50,
+        "maxval": 100,
+        "minval": 0,
+        "ch": 24,
+        "endx": 463,
+        "endy": 217
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "param.nC.val=hContrast.val",
+          "printh 55 01 11",
+          "prints hContrast.val,1",
+          "printh FF FF FF"
+        ],
+        "codesslide": [
+          "param.nC.val=hContrast.val",
+          "printh 55 01 11",
+          "prints hContrast.val,1",
+          "printh FF FF FF"
+        ]
+      }
+    }
+  ]
+}

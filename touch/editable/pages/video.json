@@ -1,0 +1,525 @@
+{
+  "header": {
+    "lock": "0000000000552100",
+    "writer": "01440102000000000000000000000000"
+  },
+  "root": {
+    "attributes": {
+      "x": 0,
+      "y": 0,
+      "w": 480,
+      "h": 272,
+      "sta": 1,
+      "bco": 2211,
+      "left": 255,
+      "right": 255
+    },
+    "events": {
+      "codesload": [
+        "hVol.val=nVol.val",
+        "covx nVol.val,tVal.txt,0,0"
+      ],
+      "codesloadend": [],
+      "codesdown": [],
+      "codesup": [],
+      "codesunload": []
+    }
+  },
+  "name": "video",
+  "objects": [
+    {
+      "key": "nVol",
+      "type": "variable",
+      "attributes": {
+        "objname": "nVol",
+        "vscope": 1,
+        "val": 50,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "tTitle",
+      "type": "text",
+      "attributes": {
+        "objname": "tTitle",
+        "vscope": 0,
+        "x": 8,
+        "y": 4,
+        "w": 464,
+        "h": 30,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_video"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "视频控制",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tSta",
+      "type": "text",
+      "attributes": {
+        "objname": "tSta",
+        "vscope": 0,
+        "x": 8,
+        "y": 36,
+        "w": 464,
+        "h": 24,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_video"
+        },
+        "bco": 2211,
+        "pco": 42391,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "指令已发送后请观察大屏",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "bPause",
+      "type": "button",
+      "attributes": {
+        "objname": "bPause",
+        "x": 16,
+        "y": 68,
+        "w": 140,
+        "h": 48,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_video"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "暂停",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "printh 55 01 02 00 FF FF FF"
+        ]
+      }
+    },
+    {
+      "key": "bPlay",
+      "type": "button",
+      "attributes": {
+        "objname": "bPlay",
+        "x": 170,
+        "y": 68,
+        "w": 140,
+        "h": 48,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_video"
+        },
+        "bco": 9522,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "继续",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "printh 55 01 02 01 FF FF FF"
+        ]
+      }
+    },
+    {
+      "key": "bStep",
+      "type": "button",
+      "attributes": {
+        "objname": "bStep",
+        "x": 324,
+        "y": 68,
+        "w": 140,
+        "h": 48,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_video"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "单帧",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "printh 55 01 01 01 FF FF FF"
+        ]
+      }
+    },
+    {
+      "key": "tVol",
+      "type": "text",
+      "attributes": {
+        "objname": "tVol",
+        "vscope": 0,
+        "x": 16,
+        "y": 118,
+        "w": 220,
+        "h": 24,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_video"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "音量设定",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tVal",
+      "type": "text",
+      "attributes": {
+        "objname": "tVal",
+        "vscope": 0,
+        "x": 392,
+        "y": 118,
+        "w": 72,
+        "h": 24,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_video"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 2,
+        "ycen": 1,
+        "txt": "50",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "bMinus",
+      "type": "button",
+      "attributes": {
+        "objname": "bMinus",
+        "x": 16,
+        "y": 140,
+        "w": 64,
+        "h": 40,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_video"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "-",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(nVol.val>0)",
+          "{",
+          "nVol.val=nVol.val-1",
+          "}",
+          "hVol.val=nVol.val",
+          "covx nVol.val,tVal.txt,0,0",
+          "ref tVal",
+          "ref hVol",
+          "printh 55 01 12",
+          "prints nVol.val,1",
+          "printh FF FF FF"
+        ]
+      }
+    },
+    {
+      "key": "hVol",
+      "type": "slider",
+      "attributes": {
+        "objname": "hVol",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 94,
+        "y": 142,
+        "w": 292,
+        "h": 30,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "mode": 0,
+        "sta": 1,
+        "psta": 0,
+        "wid": 0,
+        "hig": 0,
+        "dis": 100,
+        "pic": 65535,
+        "picc": 65535,
+        "bco": 55036,
+        "pic1": 65535,
+        "picc1": 65535,
+        "bco1": 51720,
+        "pic2": 65535,
+        "pco": 51720,
+        "val": 50,
+        "maxval": 100,
+        "minval": 0,
+        "ch": 30
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "nVol.val=hVol.val",
+          "covx nVol.val,tVal.txt,0,0",
+          "ref tVal",
+          "printh 55 01 12",
+          "prints nVol.val,1",
+          "printh FF FF FF"
+        ],
+        "codesslide": [
+          "nVol.val=hVol.val",
+          "covx nVol.val,tVal.txt,0,0",
+          "ref tVal",
+          "printh 55 01 12",
+          "prints nVol.val,1",
+          "printh FF FF FF"
+        ]
+      }
+    },
+    {
+      "key": "bPlus",
+      "type": "button",
+      "attributes": {
+        "objname": "bPlus",
+        "x": 400,
+        "y": 140,
+        "w": 64,
+        "h": 40,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_video"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "+",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(nVol.val<100)",
+          "{",
+          "nVol.val=nVol.val+1",
+          "}",
+          "hVol.val=nVol.val",
+          "covx nVol.val,tVal.txt,0,0",
+          "ref tVal",
+          "ref hVol",
+          "printh 55 01 12",
+          "prints nVol.val,1",
+          "printh FF FF FF"
+        ]
+      }
+    },
+    {
+      "key": "bMute",
+      "type": "button",
+      "attributes": {
+        "objname": "bMute",
+        "x": 16,
+        "y": 186,
+        "w": 140,
+        "h": 32,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_video"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "静音",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "nVol.val=0",
+          "hVol.val=0",
+          "tVal.txt=\"0\"",
+          "ref hVol",
+          "ref tVal",
+          "printh 55 01 12 00 FF FF FF"
+        ]
+      }
+    },
+    {
+      "key": "bBack",
+      "type": "button",
+      "attributes": {
+        "objname": "bBack",
+        "x": 0,
+        "y": 224,
+        "w": 158,
+        "h": 48,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_video"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "版本切换",
+        "txt_maxl": 14
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "page ${page:version}"
+        ]
+      }
+    },
+    {
+      "key": "bReturn",
+      "type": "button",
+      "attributes": {
+        "objname": "bReturn",
+        "x": 240,
+        "y": 224,
+        "w": 240,
+        "h": 48,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_video"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "返回图片网络版",
+        "txt_maxl": 23
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "printh 55 01 30 00 FF FF FF",
+          "page ${page:mode}"
+        ]
+      }
+    },
+    {
+      "key": "bStage",
+      "type": "button",
+      "attributes": {
+        "objname": "bStage",
+        "x": 170,
+        "y": 186,
+        "w": 294,
+        "h": 32,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_showcase"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "频谱舞台",
+        "txt_maxl": 14
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "page ${page:stage}"
+        ]
+      }
+    }
+  ]
+}

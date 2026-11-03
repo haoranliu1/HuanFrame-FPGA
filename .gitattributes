@@ -1,0 +1,6 @@
+# Preserve source bytes so SOURCE_MANIFEST.json remains verifiable after cloning.
+* -text
+*.bmp binary
+*.png binary
+*.hmi binary
+*.bit binary

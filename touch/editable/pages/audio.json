@@ -1,0 +1,1123 @@
+{
+  "name": "audio",
+  "header": {
+    "lock": "0000000000552100",
+    "writer": "01440102000000000000000000000000"
+  },
+  "root": {
+    "attributes": {
+      "vscope": 0,
+      "drag": 0,
+      "sendkey": 0,
+      "aph": 127,
+      "movex": 0,
+      "movey": 0,
+      "x": 0,
+      "y": 0,
+      "w": 480,
+      "h": 272,
+      "effect": 0,
+      "first": 0,
+      "time": 300,
+      "lockobj": 0,
+      "groupid0": 0,
+      "groupid1": 0,
+      "up": 255,
+      "down": 255,
+      "left": {
+        "$ref": "page:param"
+      },
+      "right": 255,
+      "sta": 1,
+      "bco": 61309,
+      "pic": 65535
+    },
+    "events": {
+      "codesload": [
+        "printh 55 01 50 01 FF FF FF",
+        "hV.val=nV.val",
+        "covx nV.val,tVv.txt,0,0",
+        "printh 55 01 13 FE FF FF FF"
+      ],
+      "codesloadend": [
+        "fill 208,236,64,24,61309",
+        "cirs 216,248,4,44471",
+        "cirs 228,248,4,44471",
+        "cirs 240,248,4,44471",
+        "cirs 252,248,4,1332",
+        "cirs 264,248,4,44471"
+      ],
+      "codesunload": [
+        "printh 55 01 13 FF FF FF FF"
+      ]
+    }
+  },
+  "objects": [
+    {
+      "key": "nV",
+      "type": "variable",
+      "attributes": {
+        "objname": "nV",
+        "vscope": 1,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 0,
+        "txt": "newtxt",
+        "txt_maxl": 10,
+        "val": 50
+      },
+      "events": {}
+    },
+    {
+      "key": "tBar",
+      "type": "text",
+      "attributes": {
+        "objname": "tBar",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 0,
+        "y": 0,
+        "w": 480,
+        "h": 42,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 1,
+        "style": 0,
+        "key": 255,
+        "borderc": 0,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 4357,
+        "picc": 65535,
+        "pic": 65535,
+        "pco": 0,
+        "xcen": 1,
+        "ycen": 1,
+        "pw": 0,
+        "txt": "",
+        "txt_maxl": 1,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tTitle",
+      "type": "text",
+      "attributes": {
+        "objname": "tTitle",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 14,
+        "y": 0,
+        "w": 180,
+        "h": 42,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 1,
+        "style": 0,
+        "key": 255,
+        "borderc": 0,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 4357,
+        "picc": 65535,
+        "pic": 65535,
+        "pco": 65535,
+        "xcen": 0,
+        "ycen": 1,
+        "pw": 0,
+        "txt": "音频测试",
+        "txt_maxl": 32,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tSta",
+      "type": "text",
+      "attributes": {
+        "objname": "tSta",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 320,
+        "y": 0,
+        "w": 146,
+        "h": 42,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 1,
+        "style": 0,
+        "key": 255,
+        "borderc": 0,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 4357,
+        "picc": 65535,
+        "pic": 65535,
+        "pco": 65535,
+        "xcen": 2,
+        "ycen": 1,
+        "pw": 0,
+        "txt": "按住琴键",
+        "txt_maxl": 32,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tPanel",
+      "type": "text",
+      "attributes": {
+        "objname": "tPanel",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 0,
+        "y": 42,
+        "w": 480,
+        "h": 182,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 1,
+        "style": 0,
+        "key": 255,
+        "borderc": 0,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 65535,
+        "picc": 65535,
+        "pic": 65535,
+        "pco": 0,
+        "xcen": 1,
+        "ycen": 1,
+        "pw": 0,
+        "txt": "",
+        "txt_maxl": 1,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tVol",
+      "type": "text",
+      "attributes": {
+        "objname": "tVol",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 22,
+        "y": 55,
+        "w": 74,
+        "h": 54,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 1,
+        "style": 0,
+        "key": 255,
+        "borderc": 0,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 65535,
+        "picc": 65535,
+        "pic": 65535,
+        "pco": 4357,
+        "xcen": 0,
+        "ycen": 1,
+        "pw": 0,
+        "txt": "音量",
+        "txt_maxl": 16,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "bVm",
+      "type": "button",
+      "attributes": {
+        "objname": "bVm",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 104,
+        "y": 55,
+        "w": 58,
+        "h": 54,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 2,
+        "style": 4,
+        "borderc": 0,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "pic": {
+          "$ref": "picture:pic_25"
+        },
+        "picc": 65535,
+        "bco": 50712,
+        "pic2": {
+          "$ref": "picture:pic_26"
+        },
+        "picc2": 65535,
+        "bco2": 1024,
+        "pco": 0,
+        "pco2": 65535,
+        "xcen": 1,
+        "ycen": 1,
+        "val": 0,
+        "txt": "",
+        "txt_maxl": 1,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(nV.val>0)",
+          "{",
+          "nV.val=nV.val-1",
+          "}else",
+          "{",
+          "nV.val=0",
+          "}",
+          "covx nV.val,tVv.txt,0,0",
+          "ref tVv",
+          "hV.val=nV.val",
+          "ref hV",
+          "printh 55 01 12",
+          "prints nV.val,1",
+          "printh FF FF FF"
+        ]
+      }
+    },
+    {
+      "key": "tVv",
+      "type": "text",
+      "attributes": {
+        "objname": "tVv",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 170,
+        "y": 55,
+        "w": 54,
+        "h": 54,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 1,
+        "style": 0,
+        "key": 255,
+        "borderc": 0,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_1"
+        },
+        "bco": 65535,
+        "picc": 65535,
+        "pic": 65535,
+        "pco": 51720,
+        "xcen": 1,
+        "ycen": 1,
+        "pw": 0,
+        "txt": "50",
+        "txt_maxl": 4,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "hV",
+      "type": "slider",
+      "attributes": {
+        "objname": "hV",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 232,
+        "y": 67,
+        "w": 160,
+        "h": 30,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "mode": 0,
+        "sta": 1,
+        "psta": 0,
+        "wid": 0,
+        "hig": 0,
+        "dis": 100,
+        "pic": 65535,
+        "picc": 65535,
+        "bco": 55036,
+        "pic1": 65535,
+        "picc1": 65535,
+        "bco1": 51720,
+        "pic2": 65535,
+        "pco": 51720,
+        "val": 50,
+        "maxval": 100,
+        "minval": 0,
+        "ch": 30
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [],
+        "codesslide": [
+          "nV.val=hV.val",
+          "covx nV.val,tVv.txt,0,0",
+          "ref tVv",
+          "printh 55 01 12",
+          "prints nV.val,1",
+          "printh FF FF FF"
+        ]
+      }
+    },
+    {
+      "key": "bVp",
+      "type": "button",
+      "attributes": {
+        "objname": "bVp",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 408,
+        "y": 55,
+        "w": 58,
+        "h": 54,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 2,
+        "style": 4,
+        "borderc": 0,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "pic": {
+          "$ref": "picture:pic_29"
+        },
+        "picc": 65535,
+        "bco": 50712,
+        "pic2": {
+          "$ref": "picture:pic_30"
+        },
+        "picc2": 65535,
+        "bco2": 1024,
+        "pco": 0,
+        "pco2": 65535,
+        "xcen": 1,
+        "ycen": 1,
+        "val": 0,
+        "txt": "",
+        "txt_maxl": 1,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(nV.val<100)",
+          "{",
+          "nV.val=nV.val+1",
+          "}else",
+          "{",
+          "nV.val=100",
+          "}",
+          "covx nV.val,tVv.txt,0,0",
+          "ref tVv",
+          "hV.val=nV.val",
+          "ref hV",
+          "printh 55 01 12",
+          "prints nV.val,1",
+          "printh FF FF FF"
+        ]
+      }
+    },
+    {
+      "key": "bDo0",
+      "type": "button",
+      "attributes": {
+        "objname": "bDo0",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 10,
+        "y": 126,
+        "w": 54,
+        "h": 88,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 1,
+        "style": 1,
+        "borderc": 4357,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "pic": 65535,
+        "picc": 65535,
+        "bco": 65535,
+        "pic2": 65535,
+        "picc2": 65535,
+        "bco2": 55036,
+        "pco": 4357,
+        "pco2": 4357,
+        "xcen": 1,
+        "ycen": 1,
+        "val": 0,
+        "txt": "Do",
+        "txt_maxl": 8,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [
+          "printh 55 01 13 00 FF FF FF",
+          "tSta.txt=\"Do\"",
+          "ref tSta"
+        ],
+        "codesup": [
+          "printh 55 01 13 FE FF FF FF",
+          "tSta.txt=\"静音\"",
+          "ref tSta"
+        ]
+      }
+    },
+    {
+      "key": "bRe",
+      "type": "button",
+      "attributes": {
+        "objname": "bRe",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 68,
+        "y": 126,
+        "w": 54,
+        "h": 88,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 1,
+        "style": 1,
+        "borderc": 887,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "pic": 65535,
+        "picc": 65535,
+        "bco": 887,
+        "pic2": 65535,
+        "picc2": 65535,
+        "bco2": 2595,
+        "pco": 65535,
+        "pco2": 65535,
+        "xcen": 1,
+        "ycen": 1,
+        "val": 0,
+        "txt": "Re",
+        "txt_maxl": 8,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [
+          "printh 55 01 13 01 FF FF FF",
+          "tSta.txt=\"Re\"",
+          "ref tSta"
+        ],
+        "codesup": [
+          "printh 55 01 13 FE FF FF FF",
+          "tSta.txt=\"静音\"",
+          "ref tSta"
+        ]
+      }
+    },
+    {
+      "key": "bMi",
+      "type": "button",
+      "attributes": {
+        "objname": "bMi",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 126,
+        "y": 126,
+        "w": 54,
+        "h": 88,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 1,
+        "style": 1,
+        "borderc": 1332,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "pic": 65535,
+        "picc": 65535,
+        "bco": 1332,
+        "pic2": 65535,
+        "picc2": 65535,
+        "bco2": 2595,
+        "pco": 65535,
+        "pco2": 65535,
+        "xcen": 1,
+        "ycen": 1,
+        "val": 0,
+        "txt": "Mi",
+        "txt_maxl": 8,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [
+          "printh 55 01 13 02 FF FF FF",
+          "tSta.txt=\"Mi\"",
+          "ref tSta"
+        ],
+        "codesup": [
+          "printh 55 01 13 FE FF FF FF",
+          "tSta.txt=\"静音\"",
+          "ref tSta"
+        ]
+      }
+    },
+    {
+      "key": "bFa",
+      "type": "button",
+      "attributes": {
+        "objname": "bFa",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 184,
+        "y": 126,
+        "w": 54,
+        "h": 88,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 1,
+        "style": 1,
+        "borderc": 5163,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "pic": 65535,
+        "picc": 65535,
+        "bco": 5163,
+        "pic2": 65535,
+        "picc2": 65535,
+        "bco2": 2595,
+        "pco": 65535,
+        "pco2": 65535,
+        "xcen": 1,
+        "ycen": 1,
+        "val": 0,
+        "txt": "Fa",
+        "txt_maxl": 8,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [
+          "printh 55 01 13 03 FF FF FF",
+          "tSta.txt=\"Fa\"",
+          "ref tSta"
+        ],
+        "codesup": [
+          "printh 55 01 13 FE FF FF FF",
+          "tSta.txt=\"静音\"",
+          "ref tSta"
+        ]
+      }
+    },
+    {
+      "key": "bSol",
+      "type": "button",
+      "attributes": {
+        "objname": "bSol",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 242,
+        "y": 126,
+        "w": 54,
+        "h": 88,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 1,
+        "style": 1,
+        "borderc": 58562,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "pic": 65535,
+        "picc": 65535,
+        "bco": 58562,
+        "pic2": 65535,
+        "picc2": 65535,
+        "bco2": 41888,
+        "pco": 4357,
+        "pco2": 65535,
+        "xcen": 1,
+        "ycen": 1,
+        "val": 0,
+        "txt": "Sol",
+        "txt_maxl": 8,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [
+          "printh 55 01 13 04 FF FF FF",
+          "tSta.txt=\"Sol\"",
+          "ref tSta"
+        ],
+        "codesup": [
+          "printh 55 01 13 FE FF FF FF",
+          "tSta.txt=\"静音\"",
+          "ref tSta"
+        ]
+      }
+    },
+    {
+      "key": "bLa",
+      "type": "button",
+      "attributes": {
+        "objname": "bLa",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 300,
+        "y": 126,
+        "w": 54,
+        "h": 88,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 1,
+        "style": 1,
+        "borderc": 51720,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "pic": 65535,
+        "picc": 65535,
+        "bco": 51720,
+        "pic2": 65535,
+        "picc2": 65535,
+        "bco2": 33284,
+        "pco": 65535,
+        "pco2": 65535,
+        "xcen": 1,
+        "ycen": 1,
+        "val": 0,
+        "txt": "La",
+        "txt_maxl": 8,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [
+          "printh 55 01 13 05 FF FF FF",
+          "tSta.txt=\"La\"",
+          "ref tSta"
+        ],
+        "codesup": [
+          "printh 55 01 13 FE FF FF FF",
+          "tSta.txt=\"静音\"",
+          "ref tSta"
+        ]
+      }
+    },
+    {
+      "key": "bSi",
+      "type": "button",
+      "attributes": {
+        "objname": "bSi",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 358,
+        "y": 126,
+        "w": 54,
+        "h": 88,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 1,
+        "style": 1,
+        "borderc": 39482,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "pic": 65535,
+        "picc": 65535,
+        "bco": 39482,
+        "pic2": 65535,
+        "picc2": 65535,
+        "bco2": 2595,
+        "pco": 65535,
+        "pco2": 65535,
+        "xcen": 1,
+        "ycen": 1,
+        "val": 0,
+        "txt": "Si",
+        "txt_maxl": 8,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [
+          "printh 55 01 13 06 FF FF FF",
+          "tSta.txt=\"Si\"",
+          "ref tSta"
+        ],
+        "codesup": [
+          "printh 55 01 13 FE FF FF FF",
+          "tSta.txt=\"静音\"",
+          "ref tSta"
+        ]
+      }
+    },
+    {
+      "key": "bDo1",
+      "type": "button",
+      "attributes": {
+        "objname": "bDo1",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 416,
+        "y": 126,
+        "w": 54,
+        "h": 88,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 1,
+        "style": 1,
+        "borderc": 4357,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "pic": 65535,
+        "picc": 65535,
+        "bco": 65535,
+        "pic2": 65535,
+        "picc2": 65535,
+        "bco2": 55036,
+        "pco": 4357,
+        "pco2": 4357,
+        "xcen": 1,
+        "ycen": 1,
+        "val": 0,
+        "txt": "Do+",
+        "txt_maxl": 8,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [
+          "printh 55 01 13 07 FF FF FF",
+          "tSta.txt=\"Do+\"",
+          "ref tSta"
+        ],
+        "codesup": [
+          "printh 55 01 13 FE FF FF FF",
+          "tSta.txt=\"静音\"",
+          "ref tSta"
+        ]
+      }
+    },
+    {
+      "key": "bBack",
+      "type": "button",
+      "attributes": {
+        "objname": "bBack",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 0,
+        "y": 224,
+        "w": 112,
+        "h": 48,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 2,
+        "style": 4,
+        "borderc": 0,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "pic": {
+          "$ref": "picture:pic_21"
+        },
+        "picc": 65535,
+        "bco": 50712,
+        "pic2": {
+          "$ref": "picture:pic_22"
+        },
+        "picc2": 65535,
+        "bco2": 1024,
+        "pco": 0,
+        "pco2": 65535,
+        "xcen": 1,
+        "ycen": 1,
+        "val": 0,
+        "txt": "",
+        "txt_maxl": 1,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "page ${page:bgm}"
+        ]
+      }
+    },
+    {
+      "key": "bEffect",
+      "type": "button",
+      "attributes": {
+        "objname": "bEffect",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 368,
+        "y": 224,
+        "w": 112,
+        "h": 48,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 2,
+        "style": 4,
+        "borderc": 0,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "pic": {
+          "$ref": "picture:pic_19"
+        },
+        "picc": 65535,
+        "bco": 50712,
+        "pic2": {
+          "$ref": "picture:pic_20"
+        },
+        "picc2": 65535,
+        "bco2": 1024,
+        "pco": 0,
+        "pco2": 65535,
+        "xcen": 1,
+        "ycen": 1,
+        "val": 0,
+        "txt": "",
+        "txt_maxl": 1,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "printh 55 01 13 FF FF FF FF",
+          "page ${page:effect}"
+        ]
+      }
+    }
+  ]
+}

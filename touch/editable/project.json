@@ -1,0 +1,1111 @@
+{
+  "format": "usart-hmi-project-v2",
+  "portable": true,
+  "project": {
+    "header": "0c355206600000000144216402025500ca7c7f1800000000600000003400000000000000010000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000",
+    "index_order": [
+      "i",
+      "zi",
+      "pa"
+    ]
+  },
+  "layouts": {
+    "121": [
+      [
+        "type",
+        1
+      ],
+      [
+        "id",
+        1
+      ],
+      [
+        "objname",
+        "t"
+      ],
+      [
+        "vscope",
+        1
+      ],
+      [
+        "drag",
+        1
+      ],
+      [
+        "sendkey",
+        1
+      ],
+      [
+        "aph",
+        1
+      ],
+      [
+        "movex",
+        2
+      ],
+      [
+        "movey",
+        2
+      ],
+      [
+        "x",
+        2
+      ],
+      [
+        "y",
+        2
+      ],
+      [
+        "w",
+        2
+      ],
+      [
+        "h",
+        2
+      ],
+      [
+        "endx",
+        2
+      ],
+      [
+        "endy",
+        2
+      ],
+      [
+        "effect",
+        1
+      ],
+      [
+        "first",
+        1
+      ],
+      [
+        "time",
+        2
+      ],
+      [
+        "lockobj",
+        1
+      ],
+      [
+        "groupid0",
+        4
+      ],
+      [
+        "groupid1",
+        4
+      ],
+      [
+        "up",
+        1
+      ],
+      [
+        "down",
+        1
+      ],
+      [
+        "left",
+        1
+      ],
+      [
+        "right",
+        1
+      ],
+      [
+        "sta",
+        1
+      ],
+      [
+        "bco",
+        2
+      ],
+      [
+        "pic",
+        2
+      ]
+    ],
+    "98": [
+      [
+        "type",
+        1
+      ],
+      [
+        "id",
+        1
+      ],
+      [
+        "objname",
+        "t"
+      ],
+      [
+        "vscope",
+        1
+      ],
+      [
+        "drag",
+        1
+      ],
+      [
+        "sendkey",
+        1
+      ],
+      [
+        "aph",
+        1
+      ],
+      [
+        "movex",
+        2
+      ],
+      [
+        "movey",
+        2
+      ],
+      [
+        "x",
+        2
+      ],
+      [
+        "y",
+        2
+      ],
+      [
+        "w",
+        2
+      ],
+      [
+        "h",
+        2
+      ],
+      [
+        "endx",
+        2
+      ],
+      [
+        "endy",
+        2
+      ],
+      [
+        "effect",
+        1
+      ],
+      [
+        "first",
+        1
+      ],
+      [
+        "time",
+        2
+      ],
+      [
+        "lockobj",
+        1
+      ],
+      [
+        "groupid0",
+        4
+      ],
+      [
+        "groupid1",
+        4
+      ],
+      [
+        "sta",
+        1
+      ],
+      [
+        "style",
+        1
+      ],
+      [
+        "borderc",
+        2
+      ],
+      [
+        "borderw",
+        1
+      ],
+      [
+        "font",
+        1
+      ],
+      [
+        "pic",
+        2
+      ],
+      [
+        "picc",
+        2
+      ],
+      [
+        "bco",
+        2
+      ],
+      [
+        "pic2",
+        2
+      ],
+      [
+        "picc2",
+        2
+      ],
+      [
+        "bco2",
+        2
+      ],
+      [
+        "pco",
+        2
+      ],
+      [
+        "pco2",
+        2
+      ],
+      [
+        "xcen",
+        1
+      ],
+      [
+        "ycen",
+        1
+      ],
+      [
+        "val",
+        1
+      ],
+      [
+        "txt",
+        "t"
+      ],
+      [
+        "txt_maxl",
+        2
+      ],
+      [
+        "isbr",
+        1
+      ],
+      [
+        "spax",
+        1
+      ],
+      [
+        "spay",
+        1
+      ]
+    ],
+    "116": [
+      [
+        "type",
+        1
+      ],
+      [
+        "id",
+        1
+      ],
+      [
+        "objname",
+        "t"
+      ],
+      [
+        "vscope",
+        1
+      ],
+      [
+        "drag",
+        1
+      ],
+      [
+        "sendkey",
+        1
+      ],
+      [
+        "aph",
+        1
+      ],
+      [
+        "movex",
+        2
+      ],
+      [
+        "movey",
+        2
+      ],
+      [
+        "x",
+        2
+      ],
+      [
+        "y",
+        2
+      ],
+      [
+        "w",
+        2
+      ],
+      [
+        "h",
+        2
+      ],
+      [
+        "endx",
+        2
+      ],
+      [
+        "endy",
+        2
+      ],
+      [
+        "effect",
+        1
+      ],
+      [
+        "first",
+        1
+      ],
+      [
+        "time",
+        2
+      ],
+      [
+        "lockobj",
+        1
+      ],
+      [
+        "groupid0",
+        4
+      ],
+      [
+        "groupid1",
+        4
+      ],
+      [
+        "sta",
+        1
+      ],
+      [
+        "style",
+        1
+      ],
+      [
+        "key",
+        1
+      ],
+      [
+        "borderc",
+        2
+      ],
+      [
+        "borderw",
+        1
+      ],
+      [
+        "font",
+        1
+      ],
+      [
+        "bco",
+        2
+      ],
+      [
+        "picc",
+        2
+      ],
+      [
+        "pic",
+        2
+      ],
+      [
+        "pco",
+        2
+      ],
+      [
+        "xcen",
+        1
+      ],
+      [
+        "ycen",
+        1
+      ],
+      [
+        "pw",
+        1
+      ],
+      [
+        "txt",
+        "t"
+      ],
+      [
+        "txt_maxl",
+        2
+      ],
+      [
+        "isbr",
+        1
+      ],
+      [
+        "spax",
+        1
+      ],
+      [
+        "spay",
+        1
+      ]
+    ],
+    "52": [
+      [
+        "type",
+        1
+      ],
+      [
+        "id",
+        1
+      ],
+      [
+        "objname",
+        "t"
+      ],
+      [
+        "vscope",
+        1
+      ],
+      [
+        "lockobj",
+        1
+      ],
+      [
+        "groupid0",
+        4
+      ],
+      [
+        "groupid1",
+        4
+      ],
+      [
+        "sta",
+        1
+      ],
+      [
+        "txt",
+        "t"
+      ],
+      [
+        "txt_maxl",
+        2
+      ],
+      [
+        "val",
+        4
+      ]
+    ],
+    "1": [
+      [
+        "type",
+        1
+      ],
+      [
+        "id",
+        1
+      ],
+      [
+        "objname",
+        "t"
+      ],
+      [
+        "vscope",
+        1
+      ],
+      [
+        "drag",
+        1
+      ],
+      [
+        "sendkey",
+        1
+      ],
+      [
+        "aph",
+        1
+      ],
+      [
+        "movex",
+        2
+      ],
+      [
+        "movey",
+        2
+      ],
+      [
+        "x",
+        2
+      ],
+      [
+        "y",
+        2
+      ],
+      [
+        "w",
+        2
+      ],
+      [
+        "h",
+        2
+      ],
+      [
+        "endx",
+        2
+      ],
+      [
+        "endy",
+        2
+      ],
+      [
+        "effect",
+        1
+      ],
+      [
+        "first",
+        1
+      ],
+      [
+        "time",
+        2
+      ],
+      [
+        "lockobj",
+        1
+      ],
+      [
+        "groupid0",
+        4
+      ],
+      [
+        "groupid1",
+        4
+      ],
+      [
+        "mode",
+        1
+      ],
+      [
+        "sta",
+        1
+      ],
+      [
+        "psta",
+        1
+      ],
+      [
+        "wid",
+        1
+      ],
+      [
+        "hig",
+        1
+      ],
+      [
+        "dis",
+        1
+      ],
+      [
+        "pic",
+        2
+      ],
+      [
+        "picc",
+        2
+      ],
+      [
+        "bco",
+        2
+      ],
+      [
+        "pic1",
+        2
+      ],
+      [
+        "picc1",
+        2
+      ],
+      [
+        "bco1",
+        2
+      ],
+      [
+        "pic2",
+        2
+      ],
+      [
+        "pco",
+        2
+      ],
+      [
+        "val",
+        2
+      ],
+      [
+        "maxval",
+        2
+      ],
+      [
+        "minval",
+        2
+      ],
+      [
+        "ch",
+        1
+      ]
+    ]
+  },
+  "pages": [
+    {
+      "key": "cover",
+      "content": {
+        "mode": "json",
+        "path": "pages/cover.json"
+      }
+    },
+    {
+      "key": "mode",
+      "content": {
+        "mode": "json",
+        "path": "pages/mode.json"
+      }
+    },
+    {
+      "key": "auto",
+      "content": {
+        "mode": "json",
+        "path": "pages/auto.json"
+      }
+    },
+    {
+      "key": "manual",
+      "content": {
+        "mode": "json",
+        "path": "pages/manual.json"
+      }
+    },
+    {
+      "key": "param",
+      "content": {
+        "mode": "json",
+        "path": "pages/param.json"
+      }
+    },
+    {
+      "key": "audio",
+      "content": {
+        "mode": "json",
+        "path": "pages/audio.json"
+      }
+    },
+    {
+      "key": "effect",
+      "content": {
+        "mode": "json",
+        "path": "pages/effect.json"
+      }
+    },
+    {
+      "key": "interval",
+      "content": {
+        "mode": "json",
+        "path": "pages/interval.json"
+      }
+    },
+    {
+      "key": "subtitle",
+      "content": {
+        "mode": "json",
+        "path": "pages/subtitle.json"
+      }
+    },
+    {
+      "key": "subtitle_symbols",
+      "content": {
+        "mode": "json",
+        "path": "pages/subtitle_symbols.json"
+      }
+    },
+    {
+      "key": "version",
+      "content": {
+        "mode": "json",
+        "path": "pages/version.json"
+      }
+    },
+    {
+      "key": "video",
+      "content": {
+        "mode": "json",
+        "path": "pages/video.json"
+      }
+    },
+    {
+      "key": "zoom",
+      "content": {
+        "mode": "json",
+        "path": "pages/zoom.json"
+      }
+    },
+    {
+      "key": "showcase",
+      "content": {
+        "mode": "json",
+        "path": "pages/showcase.json"
+      }
+    },
+    {
+      "key": "compare",
+      "content": {
+        "mode": "json",
+        "path": "pages/compare.json"
+      }
+    },
+    {
+      "key": "stage",
+      "content": {
+        "mode": "json",
+        "path": "pages/stage.json"
+      }
+    },
+    {
+      "key": "bgm",
+      "content": {
+        "mode": "json",
+        "path": "pages/bgm.json"
+      }
+    }
+  ],
+  "pictures": [
+    {
+      "key": "pic_0",
+      "source": {
+        "png": "pictures/pic_0.png"
+      }
+    },
+    {
+      "key": "pic_1",
+      "source": {
+        "png": "pictures/pic_1.png"
+      }
+    },
+    {
+      "key": "pic_2",
+      "source": {
+        "png": "pictures/pic_2.png"
+      }
+    },
+    {
+      "key": "pic_3",
+      "source": {
+        "png": "pictures/pic_3.png"
+      }
+    },
+    {
+      "key": "pic_4",
+      "source": {
+        "png": "pictures/pic_4.png"
+      }
+    },
+    {
+      "key": "pic_5",
+      "source": {
+        "png": "pictures/pic_5.png"
+      }
+    },
+    {
+      "key": "pic_6",
+      "source": {
+        "png": "pictures/pic_6.png"
+      }
+    },
+    {
+      "key": "pic_7",
+      "source": {
+        "png": "pictures/pic_7.png"
+      }
+    },
+    {
+      "key": "pic_8",
+      "source": {
+        "png": "pictures/pic_8.png"
+      }
+    },
+    {
+      "key": "pic_9",
+      "source": {
+        "png": "pictures/pic_9.png"
+      }
+    },
+    {
+      "key": "pic_10",
+      "source": {
+        "png": "pictures/pic_10.png"
+      }
+    },
+    {
+      "key": "pic_11",
+      "source": {
+        "png": "pictures/pic_11.png"
+      }
+    },
+    {
+      "key": "pic_12",
+      "source": {
+        "png": "pictures/pic_12.png"
+      }
+    },
+    {
+      "key": "pic_13",
+      "source": {
+        "png": "pictures/pic_13.png"
+      }
+    },
+    {
+      "key": "pic_14",
+      "source": {
+        "png": "pictures/pic_14.png"
+      }
+    },
+    {
+      "key": "pic_15",
+      "source": {
+        "png": "pictures/pic_15.png"
+      }
+    },
+    {
+      "key": "pic_16",
+      "source": {
+        "png": "pictures/pic_16.png"
+      }
+    },
+    {
+      "key": "pic_17",
+      "source": {
+        "png": "pictures/pic_17.png"
+      }
+    },
+    {
+      "key": "pic_18",
+      "source": {
+        "png": "pictures/pic_18.png"
+      }
+    },
+    {
+      "key": "pic_19",
+      "source": {
+        "png": "pictures/pic_19.png"
+      }
+    },
+    {
+      "key": "pic_20",
+      "source": {
+        "png": "pictures/pic_20.png"
+      }
+    },
+    {
+      "key": "pic_21",
+      "source": {
+        "png": "pictures/pic_21.png"
+      }
+    },
+    {
+      "key": "pic_22",
+      "source": {
+        "png": "pictures/pic_22.png"
+      }
+    },
+    {
+      "key": "pic_23",
+      "source": {
+        "png": "pictures/pic_23.png"
+      }
+    },
+    {
+      "key": "pic_24",
+      "source": {
+        "png": "pictures/pic_24.png"
+      }
+    },
+    {
+      "key": "pic_25",
+      "source": {
+        "png": "pictures/pic_25.png"
+      }
+    },
+    {
+      "key": "pic_26",
+      "source": {
+        "png": "pictures/pic_26.png"
+      }
+    },
+    {
+      "key": "pic_27",
+      "source": {
+        "png": "pictures/pic_27.png"
+      }
+    },
+    {
+      "key": "pic_28",
+      "source": {
+        "png": "pictures/pic_28.png"
+      }
+    },
+    {
+      "key": "pic_29",
+      "source": {
+        "png": "pictures/pic_29.png"
+      }
+    },
+    {
+      "key": "pic_30",
+      "source": {
+        "png": "pictures/pic_30.png"
+      }
+    },
+    {
+      "key": "pic_31",
+      "source": {
+        "png": "pictures/pic_31.png"
+      }
+    },
+    {
+      "key": "pic_32",
+      "source": {
+        "png": "pictures/pic_32.png"
+      }
+    },
+    {
+      "key": "pic_33",
+      "source": {
+        "png": "pictures/pic_33.png"
+      }
+    },
+    {
+      "key": "pic_34",
+      "source": {
+        "png": "pictures/pic_34.png"
+      }
+    },
+    {
+      "key": "pic_35",
+      "source": {
+        "png": "pictures/pic_35.png"
+      }
+    },
+    {
+      "key": "pic_36",
+      "source": {
+        "png": "pictures/pic_36.png"
+      }
+    },
+    {
+      "key": "pic_37",
+      "source": {
+        "png": "pictures/pic_37.png"
+      }
+    },
+    {
+      "key": "pic_38",
+      "source": {
+        "png": "pictures/pic_38.png"
+      }
+    },
+    {
+      "key": "pic_39",
+      "source": {
+        "png": "pictures/pic_39.png"
+      }
+    },
+    {
+      "key": "pic_40",
+      "source": {
+        "png": "pictures/pic_40.png"
+      }
+    },
+    {
+      "key": "pic_41",
+      "source": {
+        "png": "pictures/pic_41.png"
+      }
+    },
+    {
+      "key": "zoom_0",
+      "source": {
+        "png": "pictures/zoom_0.png"
+      }
+    },
+    {
+      "key": "zoom_1",
+      "source": {
+        "png": "pictures/zoom_1.png"
+      }
+    },
+    {
+      "key": "zoom_2",
+      "source": {
+        "png": "pictures/zoom_2.png"
+      }
+    },
+    {
+      "key": "zoom_3",
+      "source": {
+        "png": "pictures/zoom_3.png"
+      }
+    },
+    {
+      "key": "zoom_4",
+      "source": {
+        "png": "pictures/zoom_4.png"
+      }
+    },
+    {
+      "key": "zoom_5",
+      "source": {
+        "png": "pictures/zoom_5.png"
+      }
+    }
+  ],
+  "fonts": [
+    {
+      "key": "font_0",
+      "source": {
+        "zi": "fonts/font_0.zi"
+      }
+    },
+    {
+      "key": "font_1",
+      "source": {
+        "zi": "fonts/font_1.zi"
+      }
+    },
+    {
+      "key": "font_video",
+      "source": {
+        "zi": "fonts/font_video.zi"
+      }
+    },
+    {
+      "key": "font_zoom",
+      "source": {
+        "zi": "fonts/font_zoom.zi"
+      }
+    },
+    {
+      "key": "font_showcase",
+      "source": {
+        "zi": "fonts/font_showcase.zi"
+      }
+    },
+    {
+      "key": "font_bgm",
+      "source": {
+        "zi": "fonts/font_bgm.zi"
+      }
+    }
+  ],
+  "animations": [],
+  "program": "Program.s"
+}

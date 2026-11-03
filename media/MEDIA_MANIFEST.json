@@ -1,0 +1,106 @@
+{
+  "theme": "无人机产品互动展台",
+  "images": [
+    {
+      "index": 0,
+      "label": "宣传海报",
+      "bmp": "bmp/00_00_0.bmp",
+      "width": 960,
+      "height": 720,
+      "format": "24-bit uncompressed BMP",
+      "bytes": 2073654,
+      "sha256": "45178E4971EE672453BE635DCCAC2636C31CDB2332FF8B9D109C832DC8AEEFA3",
+      "preview": "touch_preview/zoom_0.png",
+      "operation": "Full original poster preserved; aspect-fit BMP encoding only"
+    },
+    {
+      "index": 1,
+      "label": "产品海报",
+      "bmp": "bmp/01_01_1.bmp",
+      "width": 960,
+      "height": 720,
+      "format": "24-bit uncompressed BMP",
+      "bytes": 2073654,
+      "sha256": "A1453473CB155A1F666DD1228689E3573312F534C3695DFC911920719A168355",
+      "preview": "touch_preview/zoom_1.png",
+      "operation": "Full original poster preserved; aspect-fit BMP encoding only"
+    },
+    {
+      "index": 2,
+      "label": "品牌海报",
+      "bmp": "bmp/02_02_2.bmp",
+      "width": 960,
+      "height": 720,
+      "format": "24-bit uncompressed BMP",
+      "bytes": 2073654,
+      "sha256": "5CA6F118D1C1B7ECD52B76E40D3DB904336BE66F0AA9A4568EA7B2EF7BF6A6CA",
+      "preview": "touch_preview/zoom_2.png",
+      "operation": "Full original poster preserved; aspect-fit BMP encoding only"
+    },
+    {
+      "index": 3,
+      "label": "机体底部",
+      "bmp": "bmp/03_03_3.bmp",
+      "width": 960,
+      "height": 720,
+      "format": "24-bit uncompressed BMP",
+      "bytes": 2073654,
+      "sha256": "E98E2D7CFBC54B816B1E96CAA6D291248D8F388749EE488642417067F31A28F0",
+      "preview": "touch_preview/zoom_3.png",
+      "operation": "Original object retained by local segmentation; grey-white studio background composite"
+    },
+    {
+      "index": 4,
+      "label": "机体顶部",
+      "bmp": "bmp/04_04_4.bmp",
+      "width": 960,
+      "height": 720,
+      "format": "24-bit uncompressed BMP",
+      "bytes": 2073654,
+      "sha256": "034534304C26FA28E7F97411DA8065D9E866839A6B6B95A5F5FD2E22F218BEB3",
+      "preview": "touch_preview/zoom_4.png",
+      "operation": "Original object retained by local segmentation; grey-white studio background composite"
+    },
+    {
+      "index": 5,
+      "label": "整机与遥控器",
+      "bmp": "bmp/05_05_5.bmp",
+      "width": 960,
+      "height": 720,
+      "format": "24-bit uncompressed BMP",
+      "bytes": 2073654,
+      "sha256": "BDB36A590AF902530BAF3C9FA58EC1005F31120AA885BB664BEF198C4CA4B575",
+      "preview": "touch_preview/zoom_5.png",
+      "operation": "Original object retained by local segmentation; grey-white studio background composite"
+    }
+  ],
+  "video": {
+    "frames": 906,
+    "fps": "24000/1714",
+    "width": 320,
+    "height": 240,
+    "samples_per_frame": 1714,
+    "frame_sectors": 312,
+    "bytes": 144728576,
+    "sha256": "0191B234C5BA7DA922835A200E454DC2DE3D91B2B00E581349CE68AB3B13F96B",
+    "hardware_verified": false,
+    "duration_seconds": 64.7035,
+    "start_sector": 59264,
+    "file_in_archive": false,
+    "format": "RGB565 and 24kHz mono PCM in RVA frame blocks"
+  },
+  "bgm": {
+    "tracks": [
+      "Seve",
+      "Hotel California"
+    ],
+    "catalog_id": "514FBB24",
+    "library_bytes": 57896448,
+    "library_sha256": "6F1EB305DAF8A2B8E3942BA5331CF0EE5ABA933C515F016759E912CBF7267424",
+    "start_sector": 1083392
+  },
+  "card_validation": "八个媒体文件完成两轮物理读回校验",
+  "new_media_board_verified": false,
+  "native_tft_compiled": false,
+  "touch_downloaded": false
+}

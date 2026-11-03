@@ -1,0 +1,1276 @@
+{
+  "header": {
+    "lock": "0000000000552100",
+    "writer": "01440102000000000000000000000000"
+  },
+  "root": {
+    "attributes": {
+      "x": 0,
+      "y": 0,
+      "w": 480,
+      "h": 272,
+      "sta": 1,
+      "bco": 2211,
+      "left": {
+        "$ref": "page:subtitle"
+      },
+      "right": 255
+    },
+    "events": {
+      "codesload": [
+        "tEdit2.txt=subtitle.tEdit.txt",
+        "ref tEdit2"
+      ],
+      "codesloadend": [],
+      "codesdown": [],
+      "codesup": [],
+      "codesunload": []
+    }
+  },
+  "name": "symbols",
+  "objects": [
+    {
+      "key": "tTitle",
+      "type": "text",
+      "attributes": {
+        "objname": "tTitle",
+        "vscope": 0,
+        "x": 8,
+        "y": 0,
+        "w": 220,
+        "h": 24,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "NUMBERS & SYMBOLS",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tEdit2",
+      "type": "text",
+      "attributes": {
+        "objname": "tEdit2",
+        "vscope": 0,
+        "x": 10,
+        "y": 26,
+        "w": 460,
+        "h": 32,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 6438,
+        "pco": 65294,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "",
+        "txt_maxl": 33
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "bS0_0",
+      "type": "button",
+      "attributes": {
+        "objname": "bS0_0",
+        "x": 13,
+        "y": 76,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "1",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"1\"",
+          "printh 55 01 20 31 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS0_1",
+      "type": "button",
+      "attributes": {
+        "objname": "bS0_1",
+        "x": 59,
+        "y": 76,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "2",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"2\"",
+          "printh 55 01 20 32 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS0_2",
+      "type": "button",
+      "attributes": {
+        "objname": "bS0_2",
+        "x": 105,
+        "y": 76,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "3",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"3\"",
+          "printh 55 01 20 33 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS0_3",
+      "type": "button",
+      "attributes": {
+        "objname": "bS0_3",
+        "x": 151,
+        "y": 76,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "4",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"4\"",
+          "printh 55 01 20 34 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS0_4",
+      "type": "button",
+      "attributes": {
+        "objname": "bS0_4",
+        "x": 197,
+        "y": 76,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "5",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"5\"",
+          "printh 55 01 20 35 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS0_5",
+      "type": "button",
+      "attributes": {
+        "objname": "bS0_5",
+        "x": 243,
+        "y": 76,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "6",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"6\"",
+          "printh 55 01 20 36 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS0_6",
+      "type": "button",
+      "attributes": {
+        "objname": "bS0_6",
+        "x": 289,
+        "y": 76,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "7",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"7\"",
+          "printh 55 01 20 37 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS0_7",
+      "type": "button",
+      "attributes": {
+        "objname": "bS0_7",
+        "x": 335,
+        "y": 76,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "8",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"8\"",
+          "printh 55 01 20 38 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS0_8",
+      "type": "button",
+      "attributes": {
+        "objname": "bS0_8",
+        "x": 381,
+        "y": 76,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "9",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"9\"",
+          "printh 55 01 20 39 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS0_9",
+      "type": "button",
+      "attributes": {
+        "objname": "bS0_9",
+        "x": 427,
+        "y": 76,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "0",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"0\"",
+          "printh 55 01 20 30 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS1_0",
+      "type": "button",
+      "attributes": {
+        "objname": "bS1_0",
+        "x": 13,
+        "y": 121,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": ".",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\".\"",
+          "printh 55 01 20 2E FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS1_1",
+      "type": "button",
+      "attributes": {
+        "objname": "bS1_1",
+        "x": 59,
+        "y": 121,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": ",",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\",\"",
+          "printh 55 01 20 2C FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS1_2",
+      "type": "button",
+      "attributes": {
+        "objname": "bS1_2",
+        "x": 105,
+        "y": 121,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "!",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"!\"",
+          "printh 55 01 20 21 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS1_3",
+      "type": "button",
+      "attributes": {
+        "objname": "bS1_3",
+        "x": 151,
+        "y": 121,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "?",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"?\"",
+          "printh 55 01 20 3F FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS1_4",
+      "type": "button",
+      "attributes": {
+        "objname": "bS1_4",
+        "x": 197,
+        "y": 121,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "-",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"-\"",
+          "printh 55 01 20 2D FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS1_5",
+      "type": "button",
+      "attributes": {
+        "objname": "bS1_5",
+        "x": 243,
+        "y": 121,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "+",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"+\"",
+          "printh 55 01 20 2B FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS1_6",
+      "type": "button",
+      "attributes": {
+        "objname": "bS1_6",
+        "x": 289,
+        "y": 121,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "/",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"/\"",
+          "printh 55 01 20 2F FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS1_7",
+      "type": "button",
+      "attributes": {
+        "objname": "bS1_7",
+        "x": 335,
+        "y": 121,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "%",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"%\"",
+          "printh 55 01 20 25 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS1_8",
+      "type": "button",
+      "attributes": {
+        "objname": "bS1_8",
+        "x": 381,
+        "y": 121,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": ":",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\":\"",
+          "printh 55 01 20 3A FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS1_9",
+      "type": "button",
+      "attributes": {
+        "objname": "bS1_9",
+        "x": 427,
+        "y": 121,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": ";",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\";\"",
+          "printh 55 01 20 3B FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS2_0",
+      "type": "button",
+      "attributes": {
+        "objname": "bS2_0",
+        "x": 128,
+        "y": 166,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "(",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"(\"",
+          "printh 55 01 20 28 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS2_1",
+      "type": "button",
+      "attributes": {
+        "objname": "bS2_1",
+        "x": 174,
+        "y": 166,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": ")",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\")\"",
+          "printh 55 01 20 29 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS2_2",
+      "type": "button",
+      "attributes": {
+        "objname": "bS2_2",
+        "x": 220,
+        "y": 166,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "_",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"_\"",
+          "printh 55 01 20 5F FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS2_3",
+      "type": "button",
+      "attributes": {
+        "objname": "bS2_3",
+        "x": 266,
+        "y": 166,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "=",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"=\"",
+          "printh 55 01 20 3D FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bS2_4",
+      "type": "button",
+      "attributes": {
+        "objname": "bS2_4",
+        "x": 312,
+        "y": 166,
+        "w": 40,
+        "h": 34,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "*",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\"*\"",
+          "printh 55 01 20 2A FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bLetters",
+      "type": "button",
+      "attributes": {
+        "objname": "bLetters",
+        "x": 0,
+        "y": 224,
+        "w": 78,
+        "h": 48,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "ABC",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "page ${page:subtitle}"
+        ]
+      }
+    },
+    {
+      "key": "bDel",
+      "type": "button",
+      "attributes": {
+        "objname": "bDel",
+        "x": 80,
+        "y": 224,
+        "w": 72,
+        "h": 48,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 31175,
+        "bco2": 20805,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "DEL",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val>0)",
+          "{",
+          "subtitle.nLen.val=subtitle.nLen.val-1",
+          "substr subtitle.tEdit.txt,subtitle.tEdit.txt,0,subtitle.nLen.val",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "printh 55 01 21 00 FF FF FF",
+          "ref tEdit2",
+          "}"
+        ]
+      }
+    },
+    {
+      "key": "bClear",
+      "type": "button",
+      "attributes": {
+        "objname": "bClear",
+        "x": 154,
+        "y": 224,
+        "w": 72,
+        "h": 48,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "CLEAR",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "subtitle.tEdit.txt=\"\"",
+          "tEdit2.txt=\"\"",
+          "subtitle.nLen.val=0",
+          "printh 55 01 21 01 FF FF FF",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bSpace",
+      "type": "button",
+      "attributes": {
+        "objname": "bSpace",
+        "x": 228,
+        "y": 224,
+        "w": 78,
+        "h": 48,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "SPACE",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "if(subtitle.nLen.val<32)",
+          "{",
+          "subtitle.tEdit.txt=subtitle.tEdit.txt+\" \"",
+          "printh 55 01 20 20 FF FF FF",
+          "subtitle.nLen.val=subtitle.nLen.val+1",
+          "}",
+          "tEdit2.txt=subtitle.tEdit.txt",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bDefault",
+      "type": "button",
+      "attributes": {
+        "objname": "bDefault",
+        "x": 308,
+        "y": 224,
+        "w": 82,
+        "h": 48,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 64837,
+        "bco2": 48003,
+        "pco": 4258,
+        "pco2": 4258,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "DEFAULT",
+        "txt_maxl": 9
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "subtitle.tEdit.txt=\"\"",
+          "tEdit2.txt=\"\"",
+          "subtitle.nLen.val=0",
+          "printh 55 01 21 03 FF FF FF",
+          "ref tEdit2"
+        ]
+      }
+    },
+    {
+      "key": "bApply",
+      "type": "button",
+      "attributes": {
+        "objname": "bApply",
+        "x": 392,
+        "y": 224,
+        "w": 88,
+        "h": 48,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "bco": 9522,
+        "bco2": 5069,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "APPLY",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "printh 55 01 21 02 FF FF FF"
+        ]
+      }
+    }
+  ]
+}

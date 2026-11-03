@@ -1,0 +1,12 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.venv/
+# Local and temporary files
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+# Portable offline build output
+build_out/
+build_output/

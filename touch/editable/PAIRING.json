@@ -1,0 +1,50 @@
+{
+  "tracks": [
+    "Seve",
+    "Hotel California"
+  ],
+  "catalog_id": "514FBB24",
+  "library_bytes": 57896448,
+  "library_sha256": "6F1EB305DAF8A2B8E3942BA5331CF0EE5ABA933C515F016759E912CBF7267424",
+  "start_sector": 1083392,
+  "hmi_sha256": "3263BC28B394B13E34EC6A0D1E4CEB97EF871E7E6A72EB370DE5DA047FC3D5E8",
+  "page_count": 17,
+  "picture_count": 48,
+  "native_tft_compiled": false,
+  "touch_downloaded": false,
+  "board_verified": false,
+  "hmi_path": "../drone_touch_seve_hotel.hmi",
+  "previews": [
+    {
+      "index": 0,
+      "file": "pictures/zoom_0.png",
+      "sha256": "FB8686EFD94706FACCD4AFCCF365622ECF03B6CC95E1AFF49F3B79B2CA92CDDB"
+    },
+    {
+      "index": 1,
+      "file": "pictures/zoom_1.png",
+      "sha256": "BEEC4E715C56334DE6F706E59EE536071ECCC596C8987C4294B9B3F8162C0265"
+    },
+    {
+      "index": 2,
+      "file": "pictures/zoom_2.png",
+      "sha256": "F372A490C30F42A3DF49CDD3E42C7124CB89E91190742D06DDB3962937D8A565"
+    },
+    {
+      "index": 3,
+      "file": "pictures/zoom_3.png",
+      "sha256": "EE90186D8FCFFC3CDC0EB727F063537A94A9F288E81836ECF4C247D1A916AB58"
+    },
+    {
+      "index": 4,
+      "file": "pictures/zoom_4.png",
+      "sha256": "80BBDE82E364C7B17A06DB37734D53EFDF5E6CD71FCA8DBF8764BD603D5CC3EE"
+    },
+    {
+      "index": 5,
+      "file": "pictures/zoom_5.png",
+      "sha256": "C5F366B54E5832E87C99865245312D8B8DFB9B5348A04D8AFD7B0B6DDCDC2ED9"
+    }
+  ],
+  "media_manifest": "../../media/MEDIA_MANIFEST.json"
+}

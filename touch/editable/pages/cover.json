@@ -1,0 +1,108 @@
+{
+  "name": "cover",
+  "header": {
+    "lock": "0000000000552100",
+    "writer": "01440102000000000000000000000000"
+  },
+  "root": {
+    "attributes": {
+      "vscope": 0,
+      "drag": 0,
+      "sendkey": 0,
+      "aph": 127,
+      "movex": 0,
+      "movey": 0,
+      "x": 0,
+      "y": 0,
+      "w": 480,
+      "h": 272,
+      "effect": 0,
+      "first": 0,
+      "time": 300,
+      "lockobj": 0,
+      "groupid0": 0,
+      "groupid1": 0,
+      "up": 255,
+      "down": 255,
+      "left": 255,
+      "right": 255,
+      "sta": 2,
+      "bco": 65535,
+      "pic": {
+        "$ref": "picture:pic_0"
+      }
+    },
+    "events": {
+      "codesload": [],
+      "codesloadend": [
+        "fill 208,236,64,24,61309",
+        "cirs 216,248,4,1332",
+        "cirs 228,248,4,44471",
+        "cirs 240,248,4,44471",
+        "cirs 252,248,4,44471",
+        "cirs 264,248,4,44471"
+      ],
+      "codesdown": [],
+      "codesup": [],
+      "codesunload": []
+    }
+  },
+  "objects": [
+    {
+      "key": "bNext",
+      "type": "button",
+      "attributes": {
+        "objname": "bNext",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 368,
+        "y": 224,
+        "w": 112,
+        "h": 48,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "sta": 2,
+        "style": 0,
+        "borderc": 0,
+        "borderw": 2,
+        "font": {
+          "$ref": "font:font_0"
+        },
+        "pic": {
+          "$ref": "picture:pic_19"
+        },
+        "picc": 65535,
+        "bco": 50712,
+        "pic2": {
+          "$ref": "picture:pic_20"
+        },
+        "picc2": 65535,
+        "bco2": 1024,
+        "pco": 0,
+        "pco2": 65535,
+        "xcen": 1,
+        "ycen": 1,
+        "val": 0,
+        "txt": "",
+        "txt_maxl": 1,
+        "isbr": 0,
+        "spax": 0,
+        "spay": 0
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "page ${page:mode}"
+        ]
+      }
+    }
+  ]
+}

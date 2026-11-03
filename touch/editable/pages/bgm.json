@@ -1,0 +1,1097 @@
+{
+  "header": {
+    "lock": "0000000000552100",
+    "writer": "01440102000000000000000000000000"
+  },
+  "root": {
+    "attributes": {
+      "x": 0,
+      "y": 0,
+      "w": 480,
+      "h": 272,
+      "sta": 1,
+      "bco": 2211,
+      "left": 255,
+      "right": 255
+    },
+    "events": {
+      "codesload": [
+        "printh 55 01 54 00 FF FF FF",
+        "printh 55 01 55 88 FF FF FF",
+        "printh 55 01 56 10 FF FF FF",
+        "printh 55 01 57 00 FF FF FF",
+        "printh 55 01 58 00 FF FF FF",
+        "printh 55 01 59 6E FF FF FF",
+        "printh 55 01 5A 73 FF FF FF",
+        "printh 55 01 5B 03 FF FF FF",
+        "printh 55 01 5C 24 FF FF FF",
+        "printh 55 01 5D BB FF FF FF",
+        "printh 55 01 5E 4F FF FF FF",
+        "printh 55 01 5F 51 FF FF FF",
+        "printh 55 01 60 00 FF FF FF",
+        "nDrag.val=0",
+        "nMoved.val=0",
+        "hVolume.val=nVolume.val",
+        "printh 55 01 51",
+        "prints nSelected.val,1",
+        "printh FF FF FF",
+        "printh 55 01 53",
+        "prints nVolume.val,1",
+        "printh FF FF FF",
+        "printh 55 01 50",
+        "prints nMode.val,1",
+        "printh FF FF FF",
+        "printh 55 01 52",
+        "prints nPlay.val,1",
+        "printh FF FF FF",
+        "click bRefresh,0",
+        "vis bRefresh,0",
+        "vis tName0,0",
+        "vis tName1,0",
+        "vis tPlaying,0",
+        "vis tPaused,0"
+      ],
+      "codesloadend": [],
+      "codesdown": [],
+      "codesup": [
+        "nDrag.val=0"
+      ],
+      "codesunload": [
+        "nDrag.val=0"
+      ]
+    }
+  },
+  "name": "bgm",
+  "objects": [
+    {
+      "key": "tTitle",
+      "type": "text",
+      "attributes": {
+        "objname": "tTitle",
+        "vscope": 0,
+        "x": 12,
+        "y": 2,
+        "w": 456,
+        "h": 28,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "图片 BGM · 连续伴奏",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tSelected",
+      "type": "text",
+      "attributes": {
+        "objname": "tSelected",
+        "vscope": 0,
+        "x": 12,
+        "y": 32,
+        "w": 294,
+        "h": 24,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 2211,
+        "pco": 9522,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "01 Seve",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tState",
+      "type": "text",
+      "attributes": {
+        "objname": "tState",
+        "vscope": 0,
+        "x": 318,
+        "y": 32,
+        "w": 150,
+        "h": 24,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 2211,
+        "pco": 42391,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "请求：暂停",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "nTop",
+      "type": "variable",
+      "attributes": {
+        "objname": "nTop",
+        "vscope": 1,
+        "val": 0,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "nSelected",
+      "type": "variable",
+      "attributes": {
+        "objname": "nSelected",
+        "vscope": 1,
+        "val": 0,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "nMode",
+      "type": "variable",
+      "attributes": {
+        "objname": "nMode",
+        "vscope": 1,
+        "val": 2,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "nPlay",
+      "type": "variable",
+      "attributes": {
+        "objname": "nPlay",
+        "vscope": 1,
+        "val": 0,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "nVolume",
+      "type": "variable",
+      "attributes": {
+        "objname": "nVolume",
+        "vscope": 1,
+        "val": 20,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "nDrag",
+      "type": "variable",
+      "attributes": {
+        "objname": "nDrag",
+        "vscope": 1,
+        "val": 0,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "nMoved",
+      "type": "variable",
+      "attributes": {
+        "objname": "nMoved",
+        "vscope": 1,
+        "val": 0,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "nLastY",
+      "type": "variable",
+      "attributes": {
+        "objname": "nLastY",
+        "vscope": 1,
+        "val": 0,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "nY",
+      "type": "variable",
+      "attributes": {
+        "objname": "nY",
+        "vscope": 1,
+        "val": 0,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "nRow",
+      "type": "variable",
+      "attributes": {
+        "objname": "nRow",
+        "vscope": 1,
+        "val": 0,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "nIndex",
+      "type": "variable",
+      "attributes": {
+        "objname": "nIndex",
+        "vscope": 1,
+        "val": 0,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "nThreshold",
+      "type": "variable",
+      "attributes": {
+        "objname": "nThreshold",
+        "vscope": 1,
+        "val": 0,
+        "txt": "v",
+        "txt_maxl": 2
+      },
+      "events": {}
+    },
+    {
+      "key": "tName0",
+      "type": "text",
+      "attributes": {
+        "objname": "tName0",
+        "vscope": 0,
+        "x": 318,
+        "y": 270,
+        "w": 2,
+        "h": 2,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "01 Seve",
+        "txt_maxl": 48
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tName1",
+      "type": "text",
+      "attributes": {
+        "objname": "tName1",
+        "vscope": 0,
+        "x": 321,
+        "y": 270,
+        "w": 2,
+        "h": 2,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "02 Hotel California",
+        "txt_maxl": 48
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tPlaying",
+      "type": "text",
+      "attributes": {
+        "objname": "tPlaying",
+        "vscope": 0,
+        "x": 372,
+        "y": 270,
+        "w": 2,
+        "h": 2,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "请求：播放",
+        "txt_maxl": 20
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tPaused",
+      "type": "text",
+      "attributes": {
+        "objname": "tPaused",
+        "vscope": 0,
+        "x": 375,
+        "y": 270,
+        "w": 2,
+        "h": 2,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "请求：暂停",
+        "txt_maxl": 20
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "bRefresh",
+      "type": "button",
+      "attributes": {
+        "objname": "bRefresh",
+        "x": 0,
+        "y": 0,
+        "w": 2,
+        "h": 2,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "bRow0.txt=\"-\"",
+          "bRow0.bco=10697",
+          "if(nTop.val==0)",
+          "{",
+          "bRow0.txt=tName0.txt",
+          "if(nSelected.val==0)",
+          "{",
+          "bRow0.bco=5069",
+          "}",
+          "}",
+          "ref bRow0",
+          "bRow1.txt=\"-\"",
+          "bRow1.bco=10697",
+          "if(nTop.val==0)",
+          "{",
+          "bRow1.txt=tName1.txt",
+          "if(nSelected.val==1)",
+          "{",
+          "bRow1.bco=5069",
+          "}",
+          "}",
+          "ref bRow1",
+          "bRow2.txt=\"-\"",
+          "bRow2.bco=10697",
+          "ref bRow2",
+          "bRow3.txt=\"-\"",
+          "bRow3.bco=10697",
+          "ref bRow3",
+          "if(nSelected.val==0)",
+          "{",
+          "tSelected.txt=tName0.txt",
+          "}",
+          "if(nSelected.val==1)",
+          "{",
+          "tSelected.txt=tName1.txt",
+          "}",
+          "ref tSelected",
+          "if(nPlay.val==1)",
+          "{",
+          "tState.txt=tPlaying.txt",
+          "}else",
+          "{",
+          "tState.txt=tPaused.txt",
+          "}",
+          "ref tState"
+        ]
+      }
+    },
+    {
+      "key": "bRow0",
+      "type": "button",
+      "attributes": {
+        "objname": "bRow0",
+        "x": 12,
+        "y": 62,
+        "w": 294,
+        "h": 30,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "-",
+        "txt_maxl": 96
+      },
+      "events": {
+        "codesdown": [
+          "nDrag.val=1",
+          "nMoved.val=0",
+          "nLastY.val=tch1",
+          "nRow.val=tch1-62",
+          "nRow.val=nRow.val/34"
+        ],
+        "codesup": [
+          "nDrag.val=0",
+          "if(nMoved.val==0)",
+          "{",
+          "nIndex.val=nTop.val+nRow.val",
+          "if(nIndex.val<2)",
+          "{",
+          "nSelected.val=nIndex.val",
+          "printh 55 01 51",
+          "prints nSelected.val,1",
+          "printh FF FF FF",
+          "click bRefresh,0",
+          "}",
+          "}"
+        ]
+      }
+    },
+    {
+      "key": "bRow1",
+      "type": "button",
+      "attributes": {
+        "objname": "bRow1",
+        "x": 12,
+        "y": 96,
+        "w": 294,
+        "h": 30,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "-",
+        "txt_maxl": 96
+      },
+      "events": {
+        "codesdown": [
+          "nDrag.val=1",
+          "nMoved.val=0",
+          "nLastY.val=tch1",
+          "nRow.val=tch1-62",
+          "nRow.val=nRow.val/34"
+        ],
+        "codesup": [
+          "nDrag.val=0",
+          "if(nMoved.val==0)",
+          "{",
+          "nIndex.val=nTop.val+nRow.val",
+          "if(nIndex.val<2)",
+          "{",
+          "nSelected.val=nIndex.val",
+          "printh 55 01 51",
+          "prints nSelected.val,1",
+          "printh FF FF FF",
+          "click bRefresh,0",
+          "}",
+          "}"
+        ]
+      }
+    },
+    {
+      "key": "bRow2",
+      "type": "button",
+      "attributes": {
+        "objname": "bRow2",
+        "x": 12,
+        "y": 130,
+        "w": 294,
+        "h": 30,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "-",
+        "txt_maxl": 96
+      },
+      "events": {
+        "codesdown": [
+          "nDrag.val=1",
+          "nMoved.val=0",
+          "nLastY.val=tch1",
+          "nRow.val=tch1-62",
+          "nRow.val=nRow.val/34"
+        ],
+        "codesup": [
+          "nDrag.val=0",
+          "if(nMoved.val==0)",
+          "{",
+          "nIndex.val=nTop.val+nRow.val",
+          "if(nIndex.val<2)",
+          "{",
+          "nSelected.val=nIndex.val",
+          "printh 55 01 51",
+          "prints nSelected.val,1",
+          "printh FF FF FF",
+          "click bRefresh,0",
+          "}",
+          "}"
+        ]
+      }
+    },
+    {
+      "key": "bRow3",
+      "type": "button",
+      "attributes": {
+        "objname": "bRow3",
+        "x": 12,
+        "y": 164,
+        "w": 294,
+        "h": 30,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "-",
+        "txt_maxl": 96
+      },
+      "events": {
+        "codesdown": [
+          "nDrag.val=1",
+          "nMoved.val=0",
+          "nLastY.val=tch1",
+          "nRow.val=tch1-62",
+          "nRow.val=nRow.val/34"
+        ],
+        "codesup": [
+          "nDrag.val=0",
+          "if(nMoved.val==0)",
+          "{",
+          "nIndex.val=nTop.val+nRow.val",
+          "if(nIndex.val<2)",
+          "{",
+          "nSelected.val=nIndex.val",
+          "printh 55 01 51",
+          "prints nSelected.val,1",
+          "printh FF FF FF",
+          "click bRefresh,0",
+          "}",
+          "}"
+        ]
+      }
+    },
+    {
+      "key": "tmScroll",
+      "type": "timer",
+      "attributes": {
+        "objname": "tmScroll",
+        "tim": 80,
+        "en": 1
+      },
+      "events": {
+        "codestimer": [
+          "if(nDrag.val==1&&tch0>=12&&tch0<=305&&tch1>=62&&tch1<=193)",
+          "{",
+          "nY.val=tch1",
+          "nThreshold.val=nY.val+24",
+          "if(nLastY.val>=nThreshold.val)",
+          "{",
+          "nMoved.val=1",
+          "if(nTop.val<0)",
+          "{",
+          "nTop.val=nTop.val+1",
+          "click bRefresh,0",
+          "}",
+          "nLastY.val=nY.val",
+          "}",
+          "nThreshold.val=nLastY.val+24",
+          "if(nY.val>=nThreshold.val)",
+          "{",
+          "nMoved.val=1",
+          "if(nTop.val>0)",
+          "{",
+          "nTop.val=nTop.val-1",
+          "click bRefresh,0",
+          "}",
+          "nLastY.val=nY.val",
+          "}",
+          "}"
+        ]
+      }
+    },
+    {
+      "key": "bPlay",
+      "type": "button",
+      "attributes": {
+        "objname": "bPlay",
+        "x": 318,
+        "y": 62,
+        "w": 150,
+        "h": 30,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "播放 BGM",
+        "txt_maxl": 12
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "nMode.val=2",
+          "nPlay.val=1",
+          "printh 55 01 50",
+          "prints nMode.val,1",
+          "printh FF FF FF",
+          "printh 55 01 52",
+          "prints nPlay.val,1",
+          "printh FF FF FF",
+          "click bRefresh,0"
+        ]
+      }
+    },
+    {
+      "key": "bPause",
+      "type": "button",
+      "attributes": {
+        "objname": "bPause",
+        "x": 318,
+        "y": 102,
+        "w": 150,
+        "h": 30,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "暂停",
+        "txt_maxl": 8
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "nPlay.val=0",
+          "printh 55 01 52",
+          "prints nPlay.val,1",
+          "printh FF FF FF",
+          "click bRefresh,0"
+        ]
+      }
+    },
+    {
+      "key": "bRestart",
+      "type": "button",
+      "attributes": {
+        "objname": "bRestart",
+        "x": 318,
+        "y": 142,
+        "w": 150,
+        "h": 30,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "从头播放",
+        "txt_maxl": 14
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "nMode.val=2",
+          "nPlay.val=1",
+          "printh 55 01 50",
+          "prints nMode.val,1",
+          "printh FF FF FF",
+          "printh 55 01 52 02 FF FF FF",
+          "printh 55 01 52",
+          "prints nPlay.val,1",
+          "printh FF FF FF",
+          "click bRefresh,0"
+        ]
+      }
+    },
+    {
+      "key": "bMute",
+      "type": "button",
+      "attributes": {
+        "objname": "bMute",
+        "x": 318,
+        "y": 182,
+        "w": 150,
+        "h": 30,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "关闭声音",
+        "txt_maxl": 14
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "nMode.val=0",
+          "printh 55 01 50",
+          "prints nMode.val,1",
+          "printh FF FF FF"
+        ]
+      }
+    },
+    {
+      "key": "tHint",
+      "type": "text",
+      "attributes": {
+        "objname": "tHint",
+        "vscope": 0,
+        "x": 12,
+        "y": 198,
+        "w": 294,
+        "h": 20,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 2211,
+        "pco": 42391,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "上下滑动曲目 · 点击选择",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tVolume",
+      "type": "text",
+      "attributes": {
+        "objname": "tVolume",
+        "vscope": 0,
+        "x": 12,
+        "y": 218,
+        "w": 54,
+        "h": 20,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 2211,
+        "pco": 61342,
+        "xcen": 0,
+        "ycen": 1,
+        "txt": "音量",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "hVolume",
+      "type": "slider",
+      "attributes": {
+        "objname": "hVolume",
+        "vscope": 0,
+        "drag": 0,
+        "sendkey": 0,
+        "aph": 127,
+        "movex": 0,
+        "movey": 0,
+        "x": 70,
+        "y": 216,
+        "w": 236,
+        "h": 20,
+        "effect": 0,
+        "first": 0,
+        "time": 300,
+        "lockobj": 0,
+        "groupid0": 0,
+        "groupid1": 0,
+        "mode": 0,
+        "sta": 1,
+        "psta": 0,
+        "wid": 0,
+        "hig": 0,
+        "dis": 100,
+        "pic": 65535,
+        "picc": 65535,
+        "bco": 10697,
+        "pic1": 65535,
+        "picc1": 65535,
+        "bco1": 9522,
+        "pic2": 65535,
+        "pco": 9522,
+        "val": 20,
+        "maxval": 100,
+        "minval": 0,
+        "ch": 16,
+        "endx": 305,
+        "endy": 235
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "nVolume.val=hVolume.val",
+          "printh 55 01 53",
+          "prints nVolume.val,1",
+          "printh FF FF FF"
+        ],
+        "codesslide": [
+          "nVolume.val=hVolume.val",
+          "printh 55 01 53",
+          "prints nVolume.val,1",
+          "printh FF FF FF"
+        ]
+      }
+    },
+    {
+      "key": "bBack",
+      "type": "button",
+      "attributes": {
+        "objname": "bBack",
+        "x": 12,
+        "y": 242,
+        "w": 140,
+        "h": 28,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "图像参数",
+        "txt_maxl": 14
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "page ${page:param}"
+        ]
+      }
+    },
+    {
+      "key": "bTest",
+      "type": "button",
+      "attributes": {
+        "objname": "bTest",
+        "x": 166,
+        "y": 242,
+        "w": 140,
+        "h": 28,
+        "sta": 1,
+        "style": 1,
+        "borderc": 19181,
+        "borderw": 1,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 10697,
+        "bco2": 17101,
+        "pco": 61342,
+        "pco2": 61342,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "独立测试音",
+        "txt_maxl": 17
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": [
+          "page ${page:audio}"
+        ]
+      }
+    },
+    {
+      "key": "tCount",
+      "type": "text",
+      "attributes": {
+        "objname": "tCount",
+        "vscope": 0,
+        "x": 318,
+        "y": 218,
+        "w": 150,
+        "h": 20,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 2211,
+        "pco": 42391,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "曲库 2 首",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    },
+    {
+      "key": "tID",
+      "type": "text",
+      "attributes": {
+        "objname": "tID",
+        "vscope": 0,
+        "x": 318,
+        "y": 242,
+        "w": 150,
+        "h": 24,
+        "sta": 1,
+        "style": 0,
+        "font": {
+          "$ref": "font:font_bgm"
+        },
+        "bco": 2211,
+        "pco": 42391,
+        "xcen": 1,
+        "ycen": 1,
+        "txt": "ID 514FBB24",
+        "txt_maxl": 64
+      },
+      "events": {
+        "codesdown": [],
+        "codesup": []
+      }
+    }
+  ]
+}
